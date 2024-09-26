@@ -27,7 +27,6 @@ document.getElementById('Donate-btn-1')
   
                 p.innerText =` ${addmoney} Taka is Donated for Donate for Flood at Noakhali,Bangladesh
 
-   
                 `;
                 p.style.border = "2px solid black"
                 p.style.width ="970px"
@@ -37,6 +36,7 @@ document.getElementById('Donate-btn-1')
                p.style.marginBottom ="10px"
                p.style.marginTop = "30px"
                document.getElementById('History-container').appendChild(p);
+
                  const div = document.createElement('div');
                  const currentDate = new Date().toLocaleString();
                  div.innerText = `Date : ${currentDate}`;
@@ -66,9 +66,6 @@ document.getElementById('Donate-btn-2')
        .addEventListener('click',function(){
 
         const addmoney = getInputFiledValueById('addmoney-2');
-        
-
-        
 
         if( isNaN(addmoney) ){
             alert('Wronge Money!')
@@ -108,6 +105,7 @@ document.getElementById('Donate-btn-2')
                   div.innerText = `Date : ${currentDate}`;
                   div.style.paddingLeft = "170px"
                   div.style.marginTop = "-50px"
+                  div.style.Color = 'blue'
                  document.getElementById('History-container').appendChild(div);
                  document.getElementById('my_modal_1').showModal()
                  
@@ -117,12 +115,10 @@ document.getElementById('Donate-btn-2')
                 alert('Invalid Money!')
                  return;
             }
-
             }
             else{
                 alert('Invalid Donate Amount')
             }
-        
        })
 
 

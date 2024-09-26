@@ -12,10 +12,3 @@ function getTextFiledValueById(id){
 
 }
 
-function showSectionById(id){
-    document.getElementById("Donate-section").classList.add('hidden');
-    document.getElementById("History Section").classList.add('hidden');
-    document.getElementById(id).classList.remove('hidden');
-
-}
-

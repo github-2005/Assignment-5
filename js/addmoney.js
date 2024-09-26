@@ -22,42 +22,30 @@ document.getElementById('Donate-btn-1')
                 document.getElementById('balance-1').innerText = newBalance;
                 const newMainBalance = mainBalance - addmoney;
                 document.getElementById('main-balance').innerText = newMainBalance;
-                
-                
-                
-                
-                // history
 
                 const p = document.createElement('p')
+  
                 p.innerText =` ${addmoney} Taka is Donated for Donate for Flood at Noakhali,Bangladesh
 
-                 `;
-                
+   
+                `;
                 p.style.border = "2px solid black"
                 p.style.width ="970px"
                 p.style.marginLeft ="140px"
-                p.style.padding = "20px"
-                p.style.borderRadius = "8px"
-                p.style.marginBottom ="10px"
-                p.style.marginTop = "30px"
-                document.getElementById('History-container').appendChild(p);
-                const div = document.createElement('div');
-                const currentDate = new Date().toLocaleString();
-                // historyItems.innerHTML = `<p class="text-sm text-gray-500">Date: ${currentDate}</p>`;
+               p.style.padding = "20px"
+               p.style.borderRadius = "8px"
+               p.style.marginBottom ="10px"
+               p.style.marginTop = "30px"
+               document.getElementById('History-container').appendChild(p);
+                 const div = document.createElement('div');
+                 const currentDate = new Date().toLocaleString();
                  div.innerText = `Date : ${currentDate}`;
                  div.style.paddingLeft = "170px"
                  div.style.marginTop = "-50px"
-                document.getElementById('History-container').appendChild(div);
-                // historyConteiner.insertBefore(historyConteiner.lastChild);
+                 document.getElementById('History-container').appendChild(div);
+                 
                 document.getElementById('my_modal_1').showModal()
-                        
-               
-
                 
-  
-                
-
-            
             }
 
             else if(addmoney > mainBalance){

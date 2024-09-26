@@ -45,12 +45,14 @@ document.getElementById('blog-btn').addEventListener('click',function(){
    document.getElementById('History Section').classList.add('hidden')
    document.getElementById('blog-section').classList.remove('hidden')
    document.getElementById('home-page').classList.add('hidden')
+   document.getElementById('button').classList.add('hidden')
 })
 document.getElementById('Home-btn').addEventListener('click',function(){
    document.getElementById('Donate-section').classList.remove('hidden')
    document.getElementById('History Section').classList.add('hidden')
    document.getElementById('blog-section').classList.add('hidden')
    document.getElementById('home-page').classList.remove('hidden')
+   document.getElementById('button').classList.remove('hidden')
 })
 
 

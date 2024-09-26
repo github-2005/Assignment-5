@@ -25,27 +25,14 @@
    // page donation change or history
    document.getElementById('Donation-btn').addEventListener('click',function(){
       document.getElementById('Donate-section').classList.remove('hidden')
-      document.getElementById('History-section').classList.add('hidden')
-      
-      
+      document.getElementById('History Section').classList.add('hidden')
    })
 
   document.getElementById('History-bnt').addEventListener('click',function(){
    document.getElementById('Donate-section').classList.add('hidden');
-   document.getElementById('History-section').classList.remove('hidden')
+   document.getElementById('History Section').classList.remove('hidden')
      
 })
-
-function showSectionById(id){
-   document.getElementById('Donate-section').classList.add('hidden');
-   document.getElementById('History Section').classList.add('hidden');
-   document.getElementById('History-container').classList.add('hidden');
-
-
-   document.getElementById(id).classList.remove('hidden');
-
-}
-
 
 
 

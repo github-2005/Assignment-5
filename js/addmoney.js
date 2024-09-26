@@ -86,6 +86,7 @@ document.getElementById('Donate-btn-2')
 
                  // history
                 // history
+                // history
                  const p = document.createElement('p')
                  p.innerText =` ${addmoney} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh 
                  

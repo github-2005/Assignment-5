@@ -1,6 +1,7 @@
 
 
 // Donation Box---1
+// Donation Box---1
 document.getElementById('Donate-btn-1')
        .addEventListener('click',function(){
 
@@ -59,6 +60,7 @@ document.getElementById('Donate-btn-1')
             }
         
        })
+    //    Donation Box --------2
     //    Donation Box --------2
 
 
@@ -124,6 +126,7 @@ document.getElementById('Donate-btn-2')
 
 
         //    Donation Box --------3
+         //    Donation Box --------3
 
 document.getElementById('Donate-btn-3')
        .addEventListener('click',function(){

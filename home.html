@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-5</title>
+  <!-- talwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- deuisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font awosome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<body id="home-page">
+  <header class=" sticky top-0 z-10 backdrop-blur-lg ">
+    <!-- navber section -->
+    <div class="bg-stone-100 ">
+      <div class="flex w-11/12 py-6 mx-auto sm:justify-between gap-8 lg:justify-center lg:gap-80">
+        <div>
+          <button id="blog-btn" class="bg-yellow-300 py-1 px-6  text-lg font-bold rounded-lg">Blog</button>
+        </div>
+
+        <div>
+          <h1 class="text-xl font-bold flex "><img class="w-6" src="./assest/logo.png" alt="">Donation Bangladesh</h1>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg  flex gap-2"> <img src="./assest/coin.png" alt=""><span
+              id="main-balance">50000</span> BDT</h4>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- banner section -->
+    <div class=" flex justify-center gap-6 mt-14 mb-10">
+      <button id="Donation-btn"
+        class="bg-yellow-300 px-8 py-4 rounded-lg text-lg font-bold  border-none text-black">Donation</button>
+      <button id="History-bnt" class="  px-8 py-4 rounded-lg text-lg font-bold border-none text-black">History
+
+
+      </button>
+    </div>
+    <hr>
+
+
+  </header>
+
+  <main>
+    <section class="" id="Donate-section">
+      <!-- section -----1 -->
+      <section class="w-9/12 shadow-lg mt-10  rounded-lg lg:flex mx-auto border-2">
+        <div class="hero  ">
+          <div class="hero-content gap-8 flex-col lg:flex-row">
+            <img src="./assest/noakhali.png" class="max-w-sm rounded-lg w-cover shadow-2xl" />
+            <div>
+              <div>
+                <button class="bg-orange-100 py-1 px-4 flex gap-2 text-lg font-bold rounded-lg"><img
+                    src="./assest/coin.png" alt=""><span id="balance-1">1500</span> BDT</button>
+              </div>
+              <h1 class="text-xl font-bold">Donate for Flood at Noakhali,Bangladesh</h1>
+              <p class="py-2">
+                Bangladesh is currently facing a devastating flood crisis, and the district of Noakhali has been hit
+                particularly hard. Thousands of people have lost their homes, livelihoods, and all sense of security.
+              </p>
+              <div>
+                <input id="addmoney-1" class="border-2 rounded-lg mb-2 pl-4 pr-40 lg:pr-64 py-2" type="text"
+                  placeholder="Write Donation Amount">
+              </div>
+              <button id="Donate-btn-1" class="font-semibold text-lg lg:py-3 rounded-lg bg-yellow-300 px-32 py-3 lg:px-44" >Donate Now</button>
+              <!-- <div class="open-modal">
+                      <button id="Donate-btn-1" > 
+              <!-- modal -->
+              <!-- <div id="modal-btn">
+                
+  <label  for="my_modal_6"  class=" -z-10 font-semibold text-lg lg:py-3 rounded-lg bg-yellow-300 px-32 py-3 lg:px-44">Donate Now</label>
+  
+
+  <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+  <div class="modal" role="dialog">
+    <div class="modal-box">
+     <h2 class="font-bold text-4xl text-center">Congrates!</h2>
+     <div>
+         <img class="pl-52 pt-4" src="./assest/coin.png" alt="">
+     </div>
+     <p class="text-center pt-4">You Have Donated for Humankind</p>
+     <h3 class="font-bold text-2xl pt-4 text-center">Successfully</h3>
+      <div class="modal-action">
+        <label for="my_modal_6" id="cloceModal" class="btn mr-40">Close Confirmation</label>
+      </div>
+    </div>
+  </div>
+         
+        </div>   -->
+  <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h2 class="font-bold text-4xl text-center">Congrates!</h2>
+    <div>
+        <img class="pl-52 pt-4" src="./assest/coin.png" alt="">
+    </div>
+    <p class="text-center pt-4">You Have Donated for Humankind</p>
+    <h3 class="font-bold text-2xl pt-4 text-center">Successfully</h3>
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn ml-36 mt-3">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+      <!-- section-----2 -->
+      <section class="w-9/12 rounded-lg shadow-lg mt-10 flex mx-auto border-2">
+        <div class="hero  ">
+          <div class="hero-content gap-8 flex-col lg:flex-row">
+            <img src="./assest/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <div>
+                <button class="bg-orange-100 mb-2 py-1 flex gap-2 px-4 text-lg font-bold rounded-lg"><img
+                    src="./assest/coin.png" alt=""><span id="balance-2">2000</span> BDT</button>
+              </div>
+              <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+              <p class="py-2">
+                In the wake of the recent catastrophic floods, countless lives have been turned upside down in Feni,
+                Comilla, and surrounding areas of Noakhali. and the basic necessities that so many of us take for
+                granted have been Homes have been lost, communities have been granted have been swept away in the
+                rushing waters.
+              </p>
+              <div>
+                <input id="addmoney-2" class="border-2 rounded-lg mb-2 pl-4 pr-40 lg:pr-64 py-2" type="text"
+                  placeholder="Write Donation Amount">
+              </div>
+              <button id="Donate-btn-2"
+                class=" font-semibold text-lg py-3 rounded-lg bg-yellow-300 px-32  lg:px-44">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- section-----3 -->
+      <section class="w-9/12 mt-10 mb-10 shadow-lg rounded-lg flex mx-auto border-2">
+        <div class="hero  ">
+          <div class="hero-content gap-8 flex-col lg:flex-row">
+            <img src="./assest/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <div>
+                <button class="bg-orange-100 flex gap-2 py-1 mb-2 px-4 text-lg font-bold rounded-lg"><img
+                    src="./assest/coin.png" alt=""><span id="balance-3">3000</span> BDT</button>
+              </div>
+              <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+              <p class="py-2">
+                For those who are undergoing treatment in various private hospitals, the government has requested those
+                fee or if that is not to keep the fee minimum, and the basic necessities that so many of us take for
+                granted have been reads a notification published by the government on 15 August. and the basic
+                necessities that so many of us take for granted have been.
+              </p>
+              <div>
+                <input id="addmoney-3" class="border-2 rounded-lg mb-2 pl-4 pr-40 lg:pr-64 py-2" type="text"
+                  placeholder="Write Donation Amount">
+              </div>
+              <button id="Donate-btn-3"
+                class=" font-semibold text-lg py-3 rounded-lg bg-yellow-300 px-32  lg:px-44">Donate Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </section>
+
+
+
+
+
+    <section class=" " id="History Section ">
+
+      <div id="History-container">
+
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/utilitise.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/addmoney.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/btn.js"></script>
+  <script src="js/fff.js"></script>
+
+</body>
+
+</html>
